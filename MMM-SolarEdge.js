@@ -113,8 +113,8 @@ Module.register("MMM-SolarEdge",{
         		titleTr.innerHTML = this.titles[i];
 //        		dataTr.innerHTML = this.results[i] + " " + this.suffixes[i];
             dataTr.innerHTML = this.results[i];
-        		titleTr.className += " medium regular bright";
-        		dataTr.classname += " medium light normal";
+        		titleTr.className += " small regular bright";
+        		dataTr.className += " small light normal";
 
         		row.appendChild(titleTr);
         		row.appendChild(dataTr);
