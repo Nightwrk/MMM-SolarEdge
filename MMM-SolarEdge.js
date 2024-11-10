@@ -10,7 +10,7 @@ Module.register("MMM-SolarEdge",{
         url: "https://monitoringapi.solaredge.com/site/",
         apiKey: "", //Enter API key in config.js not here
         siteId: "12345", //Sample site
-        refInterval: 1000 * 60 * 5, //5 minutes
+        refInterval: 1000 * 60 * 60, //60 minutes
         basicHeader: false,
     },
 
@@ -25,7 +25,7 @@ Module.register("MMM-SolarEdge",{
         this.getSolarData();
 
         if (this.config.basicHeader) {
-            this.data.header = 'SolarEdge PV';
+            this.data.header = 'SolarEdge';
         }
 
         var self = this;
